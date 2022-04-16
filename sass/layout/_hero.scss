@@ -19,10 +19,10 @@
     margin-right: auto;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    @include font (44px, 1.36, 00.06em);
+    
     text-transform: uppercase;
     text-align: center;
+
     color: var(--third-text-color);
 }

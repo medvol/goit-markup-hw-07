@@ -8,12 +8,12 @@
     flex-basis: calc(100%/3 - var (--card-set-gap));
 }
 
-.services__item:not(:last-child) {
-    margin-right: var(--card-set-gap);
-}
-
 .services__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: var(--card-set-gap);
+    }
 }
 
 .services__label {

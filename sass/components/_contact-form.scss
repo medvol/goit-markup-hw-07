@@ -6,9 +6,7 @@
 .contact-form__label {
     margin-bottom: 4px;
 
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font (12px, 1.17, 0.01em);
 
     color: var(--primary-text-color);
 }
@@ -29,18 +27,12 @@
     border-radius: var(--button-border-radius);
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contact-form__input:focus+.contact-form__icon,
-.contact-form__input:hover+.contact-form__icon {
-    fill: var(--accent-color);
-
-}
-
-.contact-form__input:focus,
-.contact-form__input:hover {
-    outline: none;
-    border-color: var(--accent-color);
+    &:focus,
+    &:hover {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
 
 .contact-form__icon {
@@ -50,6 +42,12 @@
     transform: translateY(-50%);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact-form__input:focus+&,
+    .contact-form__input:hover+& {
+        fill: var(--accent-color);
+    
+    }
 }
 
 .contact-form__message {
@@ -61,16 +59,14 @@
     border-radius: var(--button-border-radius);
     resize: none;
 
+    &::placeholder {
+        @include font (12px, 1.17, 0.01em);
+    
+        color: rgba(117, 117, 117, 0.5);
+    }
+
 }
 
-.contact-form__message::placeholder {
-
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
-}
 
 .checkbox__label {
     display: flex;
@@ -80,6 +76,26 @@
 
     line-height: 1.71;
 
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 9px;
+        border: 2px solid var(--secondary-text-color);
+        border-radius: var(--button-border-radius);
+        cursor: pointer;
+    
+    }
+
+    .checkbox__input:checked+&::before {
+        background-color: var(--accent-color);
+        background-image: url(../images/icon_check.svg);
+        background-size: contain;
+        background-origin: border-box;
+        border-color: var(--accent-color);
+    }
+
 }
 
 .checkbox__label--accent-color {
@@ -87,22 +103,5 @@
 }
 
 
-.checkbox__label::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    margin-right: 9px;
-    border: 2px solid var(--secondary-text-color);
-    border-radius: var(--button-border-radius);
-    cursor: pointer;
 
-}
 
-.checkbox__input:checked+.checkbox__label::before {
-    background-color: var(--accent-color);
-    background-image: url(../images/icon_check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    border-color: var(--accent-color);
-}

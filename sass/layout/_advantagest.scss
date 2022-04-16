@@ -6,12 +6,15 @@
 }
 
 .advantagest__title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     color: var(--secondary-text-color);
-    margin-bottom: 10px;
+    
 }
 
 .advantagest__item {
@@ -25,10 +28,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: var(--card-set-gap);
 
     width: 270px;
     height: 120px;
-    margin-bottom: var(--card-set-gap);
+    
     background-color: var(--third-background-color);
     border-radius: 4px;
 }

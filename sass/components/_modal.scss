@@ -28,18 +28,10 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-
-.modal-btn-close:focus .modal-btn-close__icon,
-.modal-btn-close:hover .modal-btn-close__icon {
-    fill: var(--accent-color);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
+    &:focus .modal-btn-close__icon,
+    &:hover .modal-btn-close__icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal__title {

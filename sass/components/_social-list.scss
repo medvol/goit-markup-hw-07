@@ -15,21 +15,20 @@
     color: var(--social-icon-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-
-.social-list__link:hover,
-.social-list__link:focus {
-
-    background-color: var(--accent-color);
-}
-
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-    fill: var(--primary-background-color);
+    &:hover,
+    &:focus {
+    
+        background-color: var(--accent-color);
+    }
 }
 
 .social-list__icon {
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+        fill: var(--primary-background-color);
+    }
 }

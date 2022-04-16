@@ -1,15 +1,24 @@
-@import './base/common';
-
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/common';
 
 @import './components/page-header';
+
+@import './base/container';
+
 @import './components/logo';
 @import './components/page-title';
 @import './components/button';
 @import './components/social-list';
+@import './components/filter-button';
+@import './components/card-set';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/contact-form';
+@import './components/footer';
 
-@import './base/container';
 
 @import './layout/hero';
 @import './layout/advantagest';
@@ -17,10 +26,3 @@
 @import './layout/team';
 @import './layout/clients';
 
-@import './components/footer';
-
-@import './components/filter-button';
-@import './components/card-set';
-@import './components/backdrop';
-@import './components/modal-btn';
-@import './components/contact-form';
