@@ -3,14 +3,12 @@
     align-items: center;
     justify-content: space-between;
     margin-left: calc(-1*var(--card-set-gap));
-    margin-top: calc(calc(-1*var(--card-set-gap)));
 }
 
 .clients {
 
     margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-
+    
 }
 
 .clients__link {

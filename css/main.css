@@ -65,7 +65,7 @@ ol {
   padding: 0;
 }
 
-.image {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -648,9 +648,10 @@ strong {
 
 .advantagest__title {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
@@ -757,12 +758,10 @@ strong {
   align-items: center;
   justify-content: space-between;
   margin-left: calc(-1*var(--card-set-gap));
-  margin-top: calc(calc(-1*var(--card-set-gap)));
 }
 
 .clients {
   margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
 }
 
 .clients__link {
