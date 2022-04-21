@@ -1,8 +1,7 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
     margin: auto;
 
     background-color: var(--hero-background-color);
@@ -10,19 +9,37 @@
     background-size: cover;
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+        height: 600px;
+
+    }
+
 }
 
-.hero-title {
-    width: 696px;
-    margin-bottom: var(--card-set-gap);
-    margin-left: auto;
-    margin-right: auto;
 
-    font-weight: 900;
-    @include font (44px, 1.36, 00.06em);
+    .hero-title {
+        margin-bottom: var(--card-set-gap);
+        margin-left: auto;
+        margin-right: auto;
+        width: 360px;
+        
+        @include font (26px, 1.62, 00.06em);
+        font-style: normal;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        
+        color: var(--third-text-color);
+        
+        @media screen and (min-width: 1200px) {
     
-    text-transform: uppercase;
-    text-align: center;
+            width: 696px;
+            @include font (44px, 1.36, 00.06em);
+   
+    }
 
-    color: var(--third-text-color);
 }
+

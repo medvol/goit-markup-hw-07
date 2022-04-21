@@ -7,8 +7,12 @@
 }
 
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        align-items: baseline;
+
+    }
+    
 }
 
 .page-footer__logo {
@@ -81,8 +85,10 @@ strong {
 }
 
 .footer-form {
+   
     /* margin-left: 93px; */
     justify-content: flex-end;
+
 }
 
 .footer-form__title {
@@ -98,9 +104,13 @@ strong {
 }
 
 .footer-form__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    
 }
 
 .footer-form__input {
