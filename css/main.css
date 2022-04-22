@@ -149,6 +149,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact-header {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact-header {
     display: flex;
@@ -210,6 +216,12 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -229,7 +241,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .page-title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -268,13 +280,13 @@ img {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .social-list {
     justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .social-list__item {
     margin-right: 10px;
   }
@@ -307,12 +319,25 @@ img {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__button {
@@ -337,17 +362,25 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1*var(--card-set-gap));
-  margin-top: calc(-1*var(--card-set-gap));
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1*var(--card-set-gap));
+    margin-top: calc(-1*var(--card-set-gap));
+  }
 }
 
 .card-set__item {
-  flex-basis: calc(100%/3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    flex-basis: calc(100%/3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
 }
 
 .card-set__link {
@@ -362,6 +395,11 @@ img {
 .card-set__overlay {
   position: relative;
   overflow: hidden;
+}
+
+.card-set__image {
+  width: 450px;
+  height: 294px;
 }
 
 .card-set__description {
@@ -563,14 +601,23 @@ img {
   background-color: var(--secondary-background-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .page-footer__container {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer-address {
     text-align: center;
     margin-bottom: 60px;
@@ -613,7 +660,7 @@ img {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-social {
     margin-right: auto;
     margin-left: 70px;
@@ -648,7 +695,6 @@ strong {
 @media screen and (min-width: 768px) {
   .footer-form {
     /* margin-left: 93px; */
-    justify-content: flex-end;
   }
 }
 
@@ -663,8 +709,15 @@ strong {
 @media screen and (min-width: 768px) {
   .footer-form__wrapper {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__wrapper {
+    justify-content: flex-end;
   }
 }
 
@@ -680,7 +733,7 @@ strong {
   background-color: var(--secondary-background-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form__input {
     width: 358px;
   }
@@ -761,9 +814,31 @@ strong {
 @media screen and (min-width: 768px) {
   .advantagest {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     margin-left: calc(-1*var(--card-set-gap));
     margin-top: calc(-1*var(--card-set-gap));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantagest__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantagest__item {
+    flex-basis: calc(100%/2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantagest__item {
+    flex-basis: calc(100%/4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
   }
 }
 
@@ -776,18 +851,6 @@ strong {
   text-transform: uppercase;
   text-align: center;
   color: var(--secondary-text-color);
-}
-
-.advantagest__item {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .advantagest__item {
-    flex-basis: calc(100%/4 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-  }
 }
 
 .advantagest__thumb {
@@ -815,7 +878,7 @@ strong {
   padding-top: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section--services-padding {
     display: none;
   }
@@ -880,6 +943,14 @@ strong {
 
 @media screen and (min-width: 768px) {
   .team-member {
+    flex-basis: calc(100%/2 - var (--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member {
     flex-basis: calc(100%/4 - var (--card-set-gap));
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
@@ -889,6 +960,13 @@ strong {
 .team-member__image {
   width: 450px;
   height: 460px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-member__image {
+    width: 354px;
+    height: 374px;
+  }
 }
 
 .team-member_thumb {
@@ -931,6 +1009,12 @@ strong {
   flex-basis: calc(100%/2 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    flex-basis: calc(100%/3 - var(--card-set-gap));
+  }
 }
 
 @media screen and (min-width: 1200px) {

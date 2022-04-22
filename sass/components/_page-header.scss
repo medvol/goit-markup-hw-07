@@ -95,6 +95,7 @@
     .contact-header {
         @media screen and (min-width: $tablet) {
             
+            margin-left: auto;
         }
         @media screen and (min-width:$desktop) {
             display: flex;

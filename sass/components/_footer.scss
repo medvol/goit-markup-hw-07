@@ -8,16 +8,28 @@
 
 .page-footer__container {
    
-    @media screen and (min-width:$tablet) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         align-items: baseline;
+        flex-wrap: wrap;
 
     }
     
 }
+.footer-tablet {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+
+    }
+   
+
+}
 
 .footer-address {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 1199px) {
+               
         text-align: center;
         margin-bottom: 60px;
 
@@ -67,9 +79,12 @@
 .footer-social {
     text-align: center;
     margin-bottom: 60px;
-@media screen and (min-width: $tablet) {
-    margin-right: auto;
-    margin-left: 70px;
+
+    @media screen and (min-width: $desktop) {
+     
+        
+        margin-right: auto;
+        margin-left: 70px;
 
 }
     
@@ -100,9 +115,18 @@ strong {
 
 .footer-form {
     text-align: center;
+
    @media screen and (min-width: $tablet){
+       
+       
     /* margin-left: 93px; */
-    justify-content: flex-end;
+    // justify-content: flex-end;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // margin-left: 166px;
 
    }
     
@@ -124,8 +148,15 @@ strong {
 .footer-form__wrapper {
     @media screen and (min-width:$tablet) {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        
+
+    }
+
+    @media screen and (min-width: $desktop){
+        justify-content: flex-end;
 
     }
     
@@ -145,7 +176,11 @@ strong {
     
     background-color: var(--secondary-background-color);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet){
+
+    }
+
+    @media screen and (min-width: $desktop) {
         width: 358px;
         
     }

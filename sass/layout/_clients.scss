@@ -24,6 +24,11 @@
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
 
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100%/3 - var(--card-set-gap));
+
+    }
+
     @media screen and (min-width:$desktop) {
         margin-top: 0px;
     }

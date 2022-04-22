@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $desktop){
         justify-content: space-between;
 
     }
@@ -10,7 +10,7 @@
 }
 
 .social-list__item {
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1199px){
         margin-right: 10px;
     }
 }

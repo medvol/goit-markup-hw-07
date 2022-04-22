@@ -7,6 +7,10 @@
         @include font (24px, 1.17, 00.03em);
 
         color: var(--accent-color);
+
+        @media screen and (min-width: $tablet){
+            margin-right: 88px;
+        }
       
     
     @media screen and (min-width:$desktop) {
