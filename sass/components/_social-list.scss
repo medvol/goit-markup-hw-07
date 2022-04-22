@@ -1,7 +1,18 @@
 .social-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    @media screen and (min-width: $tablet){
+        justify-content: space-between;
+
+    }
+    
+}
+
+.social-list__item {
+    @media screen and (max-width: 767px){
+        margin-right: 10px;
+    }
 }
 
 .social-list__link {

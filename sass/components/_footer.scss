@@ -7,12 +7,21 @@
 }
 
 .page-footer__container {
+   
     @media screen and (min-width:$tablet) {
         display: flex;
         align-items: baseline;
 
     }
     
+}
+
+.footer-address {
+    @media screen and (max-width: $tablet) {
+        text-align: center;
+        margin-bottom: 60px;
+
+    }    
 }
 
 .page-footer__logo {
@@ -56,9 +65,14 @@
 }
 
 .footer-social {
-
+    text-align: center;
+    margin-bottom: 60px;
+@media screen and (min-width: $tablet) {
     margin-right: auto;
     margin-left: 70px;
+
+}
+    
 }
 
 .footer-social__title {
@@ -85,9 +99,13 @@ strong {
 }
 
 .footer-form {
-   
+    text-align: center;
+   @media screen and (min-width: $tablet){
     /* margin-left: 93px; */
     justify-content: flex-end;
+
+   }
+    
 
 }
 
@@ -114,17 +132,24 @@ strong {
 }
 
 .footer-form__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
+    margin-bottom: 20px;
     padding-left: 16px;
 
     color: var(--third-text-color);
-
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-
+    
     background-color: var(--secondary-background-color);
+
+    @media screen and (min-width: $tablet) {
+        width: 358px;
+        
+    }
+    
 
     &::placeholder {
         @include font (16px, 1.25, 0.03em);

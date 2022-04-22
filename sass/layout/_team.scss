@@ -15,13 +15,24 @@
 }
 
 .team-member {
-    flex-basis: calc(100%/4 - var (--card-set-gap));
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
-
     border-radius: var(--cards-border-radius);
     box-shadow: var(--cards-box-shadow);
     background-color: var(--primary-background-color);
+    @media screen and (max-width: 767px){
+        margin-bottom: var(--card-set-gap);
+    }
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100%/4 - var (--card-set-gap));
+        margin-top: var(--card-set-gap);
+        margin-left: var(--card-set-gap);
+             
+    }
+    
+}
+
+.team-member__image {
+    width: 450px;
+    height: 460px;
 }
 
 .team-member_thumb {
