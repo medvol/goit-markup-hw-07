@@ -7,14 +7,8 @@
     margin-top: calc(-1*var(--card-set-gap));
     margin-left: calc(-1*var(--card-set-gap));
 
-    @media screen and (min-width:$tablet) {
-        
-
-    }
-
     @media screen and (min-width:$desktop) {
         margin-top: 0px;
-        
     }
     
 }
@@ -52,8 +46,7 @@
 
     @media screen and (min-width: $desktop) {
         width: 170px;
-        
-
+     
     }
 
     &:hover,

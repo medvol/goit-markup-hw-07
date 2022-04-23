@@ -11,9 +11,8 @@
         @media screen and (min-width: $tablet){
             margin-right: 88px;
         }
-      
-    
-    @media screen and (min-width:$desktop) {
+          
+        @media screen and (min-width:$desktop) {
         margin-right: 93px;
         @include font(26px, 1.19, 00.03em);
 

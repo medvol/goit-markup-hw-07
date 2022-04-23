@@ -8,6 +8,11 @@
         margin-bottom: 30px;
 
     }
+    
+    @media  screen and (min-width: $desktop) {
+        margin-bottom: 34px;
+        
+    }
 }
 
 .filter__item:not(:last-child) {
