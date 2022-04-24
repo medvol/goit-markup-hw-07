@@ -22,15 +22,16 @@
     @media screen and (max-width: 767px){
         margin-bottom: var(--card-set-gap);
     }
+
     @media screen and (min-width: $tablet) {
-        flex-basis: calc(100%/2 - var (--card-set-gap));
+        flex-basis: calc(100%/2 - var(--card-set-gap));
         margin-top: var(--card-set-gap);
         margin-left: var(--card-set-gap);
              
     }
 
     @media screen and (min-width: $desktop){
-        flex-basis: calc(100%/4 - var (--card-set-gap));
+        flex-basis: calc(100%/4 - var(--card-set-gap));
         margin-top: var(--card-set-gap);
         margin-left: var(--card-set-gap);
 
@@ -39,8 +40,12 @@
 }
 
 .team-member__image {
-    width: 450px;
-    height: 460px;
+    @media screen and (min-width: $mobile){
+        width: 450px;
+        height: 460px;
+
+    }
+    
 
     @media screen and (min-width: $tablet){
         width: 354px;

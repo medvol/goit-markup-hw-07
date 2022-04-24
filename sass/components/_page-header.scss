@@ -1,16 +1,29 @@
 .page-header {
+    position: relative;
     border-bottom: 1px solid #ECECEC;
    }
 
     .page-header__container {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+        }
+        
         @media screen and (min-width: $tablet) {
-            display: flex;
-            align-items: center;
+            
            
         }
     }
          
     .nav {
+        
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: center;
@@ -19,6 +32,8 @@
     }
 
    .nav-list {
+       display: none;
+
        @media screen and (min-width: $tablet){
            display: flex;
            align-items: center;
@@ -82,6 +97,9 @@
     }
     
     .contact-header {
+        
+            display: none;
+        
         @media screen and (min-width: $tablet) {
             
             margin-left: auto;
@@ -119,5 +137,7 @@
 .logo--header-color {
     color: var(--logo-color-header);
 }
+
+
 
 
