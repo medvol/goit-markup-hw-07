@@ -3,4 +3,14 @@
     border: none;
     padding: 0;
     line-height: 0;
+    top: 10px;
+
+    &:hover {
+        fill: var(--accent-color);
+    }
+
+    @media screen and (min-width: $tablet){
+        display: none;
+    }
 }
+

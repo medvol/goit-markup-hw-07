@@ -53,56 +53,60 @@
                         
                  </li>
             </ul>
-            <button type="button" class="menu-burger-btn">
+            <button type="button" class="menu-burger-btn" data-menu-open>
                 <svg class="menu-burger-btn__icon" width="40px" height="40px">
                     <use href="./images/icons.svg#menu-burger-btn-icon"></use>
                     <use></use>
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu">
-            <button class="mobile-menu__close-btn">
-                <svg class="mobile-menu__icon" width="40px" height="40px">
-                    <use href="./images/icons.svg#burger-close-icon"></use>
-                </svg>
-               
-            </button>
-
-            <ul>
-                <li class="list">
-                    <a href="">Студия</a>
-                </li>
-                <li class="list">
-                    <a href="">Портфолио</a>
-                </li>
-                <li class="list">
-                    <a href="">Контакты</a>
-                </li>
-            </ul>
+        <div class="mobile-menu is-open" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#burger-close-icon"></use>
+                    </svg>
+                
+                </button>
+                
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item" >
+                        <a class="mobile-menu__link mobile-menu__link--current-page link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item" >
+                        <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item" >
+                        <a class="mobile-menu__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+                
+                <ul class="mobile-menu-contact list">
+                    <li class="mobile-menu-contact__item" >
+                        <a class="mobile-menu-contact__link mobile-menu-contact__link--current-page link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contact__item" >
+                        <a class="mobile-menu-contact__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                
+                <ul class="mobile-menu-social__list list">
+                    <li class="mobile-menu-social__item" >
+                        <a class="mobile-menu-social__link link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-social__item" >
+                        <a class="mobile-menu-social__link link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-social__item" >
+                        <a class="mobile-menu-social__link link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-social__item" >
+                        <a class="mobile-menu-social__link link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+                
+            </div>
             
-            <ul>
-                <li class="list">
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="list">
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-            
-            <ul>
-                <li class="list">
-                    <a href="">Instagram</a>
-                </li>
-                <li class="list">
-                    <a href="">Twitter</a>
-                </li>
-                <li class="list">
-                    <a href="">Facebook</a>
-                </li>
-                <li class="list">
-                    <a href="">LinkedIn</a>
-                </li>
-            </ul>
         </div>
       
      </header>
@@ -577,6 +581,8 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <script src="./js/menu.js"></script>
 
 </body>
 

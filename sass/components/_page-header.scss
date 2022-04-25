@@ -101,6 +101,7 @@
             display: none;
         
         @media screen and (min-width: $tablet) {
+            display: block;
             
             margin-left: auto;
         }
@@ -111,13 +112,19 @@
     }
 
     .contact-header__item:not(:last-child) {
-        margin-right: var(--card-set-gap);
+        @media screen and (min-width: $desktop) {
+            margin-right: var(--card-set-gap);
 
+        }
+      
     }
     
     .contact-header__link {
         @media screen and (min-width: $tablet) {
-             color: var(--primary-text-color);
+            font-weight: 500;
+            @include font (12px, 1.17, 00.02em );
+           
+            color: var(--primary-text-color);
                                 
                 &:hover,
                 &:hover:focus {
